@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Анимация появления кнопки */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 2s ease-in-out forwards;
+}
+
+/* Общие стили */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1a1a1a;
+}
+
+.Purple {
+  color: #CEBCFF; 
+}
+
+.Green {
+  color: #D2FF1F; 
+}
+
+.bg-gradient {
+  background: linear-gradient(90deg, #D2FF1F, #CEBCFF);
+  background-size: 200% 200%;
+}
+
+.main-text {
+  word-spacing: 70px;
+}
+
